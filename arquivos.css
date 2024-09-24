@@ -2,6 +2,7 @@ body {
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /* Improved readability */
 }
 
 ul {
@@ -9,11 +10,19 @@ ul {
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
-    padding: 16px;
+    padding: 1rem; /* Use rem for responsiveness */
+    margin: 0; /* Remove default margin */
 }
 
 a {
     color: white;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover,
+a:focus {
+    color: lightgreen; /* Change color on hover/focus */
 }
 
 .center {
@@ -21,17 +30,29 @@ a {
 }
 
 main {
-    align-items: center;
-}
-
-nav a:hover {
-    color: lightgreen;
+    display: flex; /* Ensure main is a flex container */
+    flex-direction: column; /* Stack child elements */
+    align-items: center; /* Center items */
 }
 
 h1 {
     color: lightgreen;
+    font-size: 2rem; /* Responsive font size */
 }
 
 .container {
-    padding: 0px 50px;
+    padding: 0 2rem; /* Use rem for consistent padding */
+    max-width: 1200px; /* Limit max width for better readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
 }
