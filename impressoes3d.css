@@ -26,13 +26,6 @@ main section h3 {
     margin-top: 2rem;
 }
 
-img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-}
-
-
 .product {
     display: flex;
     align-items: center;
