@@ -1,0 +1,13 @@
+main h1 {
+    color: white;
+}
+
+main {
+    align-items: center;
+    text-align: center;
+}
+
+main section h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
