@@ -53,7 +53,7 @@ header {
     display: block;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1450px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -103,19 +103,6 @@ header {
     }
     
 }
-
-@media screen and (max-width: 400px) {
-    .nav-bar {
-        padding: 1rem 2rem;
-    }
-    h1 {
-        font-size: 1.2rem; /* Adjust font size for smaller devices */
-    }
-    .logo img {
-        max-width: 150px; /* Smaller logo */
-    }
- }
- 
 
 header .center img {
     max-width: 250px;
